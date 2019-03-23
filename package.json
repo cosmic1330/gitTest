@@ -6,6 +6,13 @@
   "dependencies": {
     "browser-sync": "^2.26.3",
     "compass": "^0.1.1",
+<<<<<<< HEAD
+>>>>>>> B功能開發
+=======
+<<<<<<< HEAD
+    "gsap": "^2.1.2",
+=======
+>>>>>>> bca727bace7af0b0d1acfc456ac36b72b8691d5e
 >>>>>>> B功能開發
     "gulp": "^3.9.1",
     "gulp-cli": "^2.0.1",
