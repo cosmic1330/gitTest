@@ -5,11 +5,13 @@
   "main": "gulpfile.js",
   "dependencies": {
     "browser-sync": "^2.26.3",
+    "compass": "^0.1.1",
     "gulp": "^3.9.1",
     "gulp-cli": "^2.0.1",
     "gulp-sass": "^4.0.2",
+    "gulp-sourcemaps": "^2.6.5",
     "jquery": "^3.3.1",
-    "sass": "^1.17.2"
+    "sass": "^1.17.3"
   },
   "devDependencies": {},
   "scripts": {

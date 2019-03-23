@@ -1,0 +1,33 @@
+
+// button模組===============================
+@function borderRadius($width){
+    @return ( $width/2 );
+}
+
+@mixin buttonBackground($background,$color,$width,$height){
+    color:$color;
+    background: $background;
+    width: $width;
+    height: $height;
+    border-radius: borderRadius($width);
+    text-align: center;
+    padding: 10px;
+    box-sizing: border-box;
+    @extend %fontSize;
+}
+
+@mixin buttonhover($hoverbackground,$hoverColor){
+    color:$hoverColor;
+    background: $hoverbackground;
+}
+
+@mixin buttonModel($className){
+    #{$className}{
+        @include buttonBackground($buttonValue...);
+        &:hover{
+            @include buttonhover($buttonHoverValue...);
+            cursor:pointer;
+        }
+    }
+}
+// ===========================================
