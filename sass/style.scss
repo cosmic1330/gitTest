@@ -1,0 +1,53 @@
+@import "base/_var.scss";
+@import "mixin/mixin.scss";
+@import "page/_index";
+@import "layout/_header";
+@import "layout/_footer.scss";
+@import "reset.css";
+
+//each========================================
+$alt :  alert , red , yellow ;
+$sub :  submit , #fff , green;
+$back : back , blue ,  #00e070;
+$clear : clears , #848d84 ,  #ffcc25;
+
+
+@each $className  , $text , $back in $alt , $sub , $back ,$clear  {
+
+
+.#{$className}-btn {
+    color: $text;
+    background-color: $back; 
+}
+}
+
+@each $title_font,
+$size in (h1 : 48px, h2 : 46px, h3 : 30px, h4: 26px , h5: 14px) {
+    #{$title_font} {
+        font-size: $size;
+    }
+}
+//============================================
+//while=======================================
+$x : 0;
+
+@while $x < 8 {
+    .col-#{$x} {
+      width :  1 * $x ;      
+    }
+    
+    $x : $x + 1;
+}
+//============================================
+//for=========================================
+### @for 迴圈
+
+```css=
+ @for $i from 1 through 10 {
+
+        .push-left-#{$i} {
+            margin-left: $i * 1px;
+        }
+    }
+//============================================
+

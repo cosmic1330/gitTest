@@ -1,0 +1,10 @@
+body{
+    background: $firstColor;
+}
+h1{
+    background: $secColor;
+    color:$threColor;
+}
+nav{
+    @include buttonModel('.navBtn');
+}
